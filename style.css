@@ -1,0 +1,135 @@
+@font-face {
+  font-family: bloomberg;
+  src: url("./assets/bloomberg.woff2");
+}
+@font-face {
+  font-family: lato;
+  src: url("./assets/lato.woff2");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+html {
+  background: #000000;
+  color: #ffffff;
+  font-family: lato, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+h1 {
+  font-family: bloomberg;
+  font-weight: normal;
+  font-size: 2.5em;
+}
+
+.input-container {
+  margin-bottom: 8px;
+}
+
+label {
+  display: block;
+}
+
+input {
+  border: 1px solid white;
+  padding: 8px;
+  font-size: 1.2em;
+  width: 100%;
+}
+
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.custom-file-input::before {
+  content: "Select file";
+  display: inline-block;
+  width: 100%;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+}
+.custom-file-input:hover::before {
+  border-color: black;
+}
+.custom-file-input:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+#video-input::before {
+  content: "Select video";
+}
+#subs-input::before {
+  content: "Select subtitles";
+}
+#dirs::before {
+  content: "Select output directory";
+}
+
+.input-value {
+  min-height: 31px;
+  padding: 8px 0;
+  text-overflow: ellipsis;
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: hidden;
+  font-size: 10px;
+  direction: rtl;
+}
+
+button {
+  font-size: 1.2em;
+  width: 100%;
+  padding: 0.4em;
+  text-transform: uppercase;
+  margin: 1em 0;
+}
+
+#margin-value {
+  direction: ltr;
+  text-align: left;
+}
+
+#margin-input {
+  width: 100px;
+}
+
+.info {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 1em;
+  font-size: 1.5em;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#form {
+  width: 450px;
+}
+
+a {
+  color: #ffffff;
+}
+
+p {
+  text-align: center;
+}
+
+button {
+  cursor: pointer;
+}
