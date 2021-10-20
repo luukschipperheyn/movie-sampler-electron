@@ -1,12 +1,12 @@
 {
   "name": "movie-sampler",
   "main": "main.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "dependencies": {
     "electron-squirrel-startup": "^1.0.0",
     "ffmpeg-static-electron": "^2.0.3",
     "jquery": "^3.6.0",
-    "movie-sampler": "^1.4.0",
+    "movie-sampler": "^1.4.1",
     "open": "^8.3.0"
   },
   "devDependencies": {
