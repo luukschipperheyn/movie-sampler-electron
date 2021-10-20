@@ -51,6 +51,11 @@ input {
   width: 100%;
 }
 
+.black-input {
+  background: black;
+  color: white;
+}
+
 .custom-file-input::-webkit-file-upload-button {
   visibility: hidden;
 }
@@ -98,12 +103,12 @@ button {
   margin: 1em 0;
 }
 
-#margin-value {
+.input-value.ltr {
   direction: ltr;
   text-align: left;
 }
 
-#margin-input {
+.input {
   width: 100px;
 }
 
@@ -132,4 +137,21 @@ p {
 
 button {
   cursor: pointer;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-container--column {
+  margin-right: 16px;
+}
+
+.input-container--column:last-of-type {
+  margin-right: 0;
+}
+
+pre {
+  overflow-x: auto;
 }

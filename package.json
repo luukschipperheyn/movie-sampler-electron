@@ -6,7 +6,7 @@
     "electron-squirrel-startup": "^1.0.0",
     "ffmpeg-static-electron": "^2.0.3",
     "jquery": "^3.6.0",
-    "movie-sampler": "^1.4.1",
+    "movie-sampler": "^1.5.2",
     "open": "^8.3.0"
   },
   "devDependencies": {

@@ -11,7 +11,7 @@ function createWindow() {
     })
 
     win.loadFile('index.html')
-    // win.webContents.openDevTools({ mode: 'undocked' })
+    win.webContents.openDevTools({ mode: 'undocked' })
 
     ipcMain.on('select-dirs', async (event, arg) => {
         console.log('huuhhhhh')
@@ -23,8 +23,7 @@ function createWindow() {
             console.log('directories selected', result.filePaths)
             event.reply('dir-selected', result.filePaths[0])
         } catch (e) {
-            console.error('errrrooorrr', e)
-            console.log('haeh')
+            console.error(e)
         }
     })
 }

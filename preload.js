@@ -24,10 +24,12 @@ window.addEventListener('DOMContentLoaded', () => {
     const $video = $('#video-input')
     const $subs = $('#subs-input')
     const $margin = $('#margin-input')
+    const $offset = $('#offset-input')
     const $videoValue = $('#video-value')
     const $subsValue = $('#subs-value')
     const $outValue = $('#out-value')
     const $marginValue = $('#margin-value')
+    const $offsetValue = $('#offset-value')
 
     $video.on('change', () => {
         const video = $video[0].files[0].path;
@@ -39,6 +41,9 @@ window.addEventListener('DOMContentLoaded', () => {
     })
     $margin.on('change', () => {
         $marginValue.text(`margin: ${$margin.val()} seconds`)
+    })
+    $offset.on('change', () => {
+        $offsetValue.text(`subtitle offset: ${$offset.val()} seconds`)
     })
 
     let out = ''
@@ -62,13 +67,14 @@ window.addEventListener('DOMContentLoaded', () => {
         const video = $video[0].files[0].path;
         const subs = $subs[0].files[0].path;
         const margin = $margin.val();
+        const offset = $offset.val();
 
         const onProcessItem = (sub) =>
             $output.text(`processing item:\n${JSON.stringify(sub, null, 2)}`);
 
         try {
             console.log({ video, subs, out })
-            await movieSampler({ video, subs, out, onProcessItem, ffmpegPath, margin });
+            await movieSampler({ video, subs, out, onProcessItem, ffmpegPath, margin, offset });
             $output.text("done");
         } catch (e) {
             console.log(e);
