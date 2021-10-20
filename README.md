@@ -6,7 +6,7 @@ Electron UI for [movie-sampler](https://github.com/luukschipperheyn/movie-sample
 
 ## Releases
 
-Check out the releases section if you want a compiled version for Windows or macos
+Check out the [releases section](https://github.com/luukschipperheyn/movie-sampler-electron/releases/) if you want a compiled version for Windows or macos
 
 ## Development
 
