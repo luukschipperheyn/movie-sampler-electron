@@ -2455,10 +2455,17 @@ mkdirp@^1.0.3, mkdirp@^1.0.4:
   resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-1.0.4.tgz#3eb5ed62622756d79a5f0e2a221dfebad75c2f7e"
   integrity sha512-vVqVZQyf3WLx2Shd0qJ9xuvqgAyKPLAiqITEtqW0oIUjzo3PePDd6fW9iFz30ef7Ysp/oiWqbhszeGWW2T6Gzw==
 
+<<<<<<< Updated upstream
 movie-sampler@^1.6.1:
   version "1.6.1"
   resolved "https://registry.yarnpkg.com/movie-sampler/-/movie-sampler-1.6.1.tgz#791ca1d7a77b481f424d9cb6d652f6d685b589bc"
   integrity sha512-QB8Jzw0oK6G/njppqd9rMGDooJkCPnzyjneLtGkIqrF12qgS8xGdnKGKySEETGNg8d2Jsj2nt0+YBbiI0WJvcQ==
+=======
+movie-sampler@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/movie-sampler/-/movie-sampler-1.4.0.tgz#7df6e334924b2de5b89764329fdab10641e7ce26"
+  integrity sha512-w8XaFhalRUllwrC7ckzGNNswaTjh+JPhgvPjwIKwG5WRDQiqKNCuegGhKGf0E05Ax+XNHLCoJPa00BCqOps/aw==
+>>>>>>> Stashed changes
   dependencies:
     command-line-args "^5.2.0"
     command-line-usage "^6.1.1"

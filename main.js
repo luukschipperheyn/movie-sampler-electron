@@ -11,7 +11,7 @@ function createWindow() {
   });
 
   win.loadFile("index.html");
-  win.webContents.openDevTools({ mode: "undocked" });
+  // win.webContents.openDevTools({ mode: "undocsked" });
 
   ipcMain.on("select-dirs", async (event, arg) => {
     try {

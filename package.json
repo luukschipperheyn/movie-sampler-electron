@@ -1,7 +1,9 @@
 {
   "name": "movie-sampler",
   "main": "main.js",
-  "version": "1.3.0",
+  "version": "1.3.1",
+  "author": "Luuk Schipperheyn <luuk@luuk.computer>",
+  "description": "samples sound effects from movies by parsing subtitle files containing noise captions",
   "dependencies": {
     "electron-squirrel-startup": "^1.0.0",
     "ffmpeg-static-electron": "^2.0.3",
