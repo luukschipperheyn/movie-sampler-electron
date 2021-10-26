@@ -142,10 +142,12 @@ button {
 .row {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 8px;
 }
 
 .input-container--column {
   margin-right: 16px;
+  flex: 1;
 }
 
 .input-container--column:last-of-type {
@@ -154,4 +156,17 @@ button {
 
 pre {
   overflow-x: auto;
+}
+
+select {
+  padding: 8px 4px;
+  background: black;
+  color: white;
+  border: 1px solid white;
+  font-size: 18px;
+  width: 100%;
+}
+
+#query-input {
+  display: none;
 }

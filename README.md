@@ -1,6 +1,9 @@
 # Movie Sampler Electron
 
-Electron UI for [movie-sampler](https://github.com/luukschipperheyn/movie-sampler)
+Movie Sampler extracts sound effects from movies based on subtitle files
+that have noise captions. It just samples the movie audio whenever the
+subtitles say something in square brackets, parentheses or all caps like
+[alarm beeping] or (agonized grunts) or INDISTINCT CHATTER.
 
 ![screenshot](./assets/screenshot.png)
 

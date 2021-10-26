@@ -60,7 +60,22 @@
             id="offset-input"
             value="0"
           />
-          <div class="input-value ltr" id="offset-value">subtitle offset: 0 seconds</div>
+          <div class="input-value ltr" id="offset-value">
+            subtitle offset: 0 seconds
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-container--column">
+          <select id="mode">
+            <option value="normal">normal</option>
+            <option value="query">query</option>
+            <option value="regex">regex</option>
+          </select>
+          <div class="input-value ltr" id="mode-value">mode: normal</div>
+        </div>
+        <div class="input-container--column">
+          <input type="text" name="query-input" id="query-input" />
         </div>
       </div>
       <button type="submit" id="form-button">go</button>
